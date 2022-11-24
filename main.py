@@ -1,5 +1,4 @@
-from abstraction import square
-from abstraction import triangle
+from classes import square, triangle
 
 square = square.Square()
 triangle = triangle.Triangle()

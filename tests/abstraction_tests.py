@@ -1,8 +1,8 @@
 from unittest import TestCase
 
-from abstraction.square import Square
-from abstraction.triangle import Triangle
-from abstraction.polygon import Polygon
+from classes.square import Square
+from classes.triangle import Triangle
+from classes.polygon import Polygon
 
 
 class AbstractionTests(TestCase):

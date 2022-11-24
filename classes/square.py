@@ -1,4 +1,4 @@
-from abstraction.polygon import Polygon
+from polygon import Polygon
 
 
 class Square(Polygon):
