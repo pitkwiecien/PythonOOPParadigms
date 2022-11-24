@@ -3,6 +3,7 @@ from unittest import TestCase
 from classes.square import Square
 from classes.triangle import Triangle
 from classes.polygon import Polygon
+import auxiliary_functions
 
 
 class AbstractionTests(TestCase):
@@ -45,3 +46,14 @@ class AbstractionTests(TestCase):
             error_occurred = True
 
         self.assertTrue(error_occurred)
+
+    def test_polymorphism(self):
+        error_occurred = False
+        eq = None
+        try:
+            eq = auxiliary_functions.call_get_sides(self.sq)
+        except RuntimeError:
+            error_occurred = True
+
+        self.assertFalse(error_occurred)
+        self.assertEqual(eq, self.sq.get_sides())
